@@ -35,7 +35,7 @@ namespace Console_Application_Lab2
         }
         static public List<Device> GetSomeRandomDevices()
         {
-            List<Device> devices = new List<Device>();
+            List<Device> devices = new List<Device>(); 
 
             for (int i = 0; i < r.Next(1, 5); i++)
                 devices.Add(new Device(GetRandomSensor(), r.Next(4, 10), new DateTime(r.Next(2014, 2023), r.Next(1, 13), r.Next(1, 28))));
